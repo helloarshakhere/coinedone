@@ -37,7 +37,11 @@ class _mainscreenState extends State<mainscreen> {
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   gradient: LinearGradient( 
-                      colors: [Color(0xffbFFFBA3), Color(0xffbE330BC)])),
+                    begin:Alignment.topLeft,
+                    end:  Alignment.bottomRight,
+                  stops: [0.1, 0.9],
+                   tileMode:TileMode.decal ,
+                      colors: [Color(0xffbE330BC).withOpacity(0), Color(0xffbFFFBA3).withOpacity(1),])),
             ),
           ),
           title: Text(
