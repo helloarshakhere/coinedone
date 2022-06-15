@@ -1,12 +1,8 @@
-import 'dart:convert';
-import 'dart:developer';
+
 import 'package:coinedone/bloc/userdataget_bloc.dart';
 import 'package:coinedone/sectohr.dart';
-import 'package:coinedone/model/freetime.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:http/http.dart';
 import 'circularindicator.dart';
 
 class mainscreen extends StatefulWidget {
@@ -40,7 +36,7 @@ class _mainscreenState extends State<mainscreen> {
             child: Container(
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  gradient: LinearGradient(
+                  gradient: LinearGradient( 
                       colors: [Color(0xffbFFFBA3), Color(0xffbE330BC)])),
             ),
           ),

@@ -11,6 +11,7 @@ class apifetchdata {
     screentime? screentimedata;
     freetime? freetimedata;
     List<devices> deviceslist = [];
+
     try {
       final url = Uri.https(_baseUri, "/p68289/screentime");
       final response = await http.get(url);
